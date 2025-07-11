@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>login</title>
+    </head>
+    <body>
+    <header >
+            <h1 class="app_name">Emotional Regulation App</h1>
+    </header>
+    <main class="login_portal">
+        <form class="account" action="/profile" method="POST">
+                <label>username</label><br>
+                <input class="details"
+                       name="username"
+                       type="email"
+                       placeholder="emailaddress@website.com"><br><br>
+                <label>password</label><br>
+                <input class="details"
+                       name="password"
+                       type="password"
+                       placeholder="Enter password"><br><br>
+                <input class="button"
+                       type="submit"
+                       value="LOGIN"><br>
+            <p class="creators">Created by Alice England, Eloise Melville, Emma Gill, Emma Moseley, Kathleen O'Sullivan</p>
+        </form>
+    </main>
+    <footer>
+            <form action="/new">
+                <label class="new">New here?&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input class="register"
+                       value="Register"
+                       type="submit">
+        </form>
+    </footer>
+</html>
+

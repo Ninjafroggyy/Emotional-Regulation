@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='homepage.css') }}" media="screen,projection">
+  </head>
+    <header >
+      <input type="checkbox" id="ham-menu">
+      <label for="ham-menu">
+        <div class="hide-des">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </div>
+      </label>
+      <div class="full-page-blue"></div>
+      <div class="ham-menu">
+        <ul class="centre-text bold-text">
+          <h1 class="menu_title">Emotional Regulation App</h1><br><br><br>
+          <li><a href="/new/homepage">Home</a></li>
+          <li><a href="/new/profile">Profile</a></li>
+          <li><a href="/unavailable">Journal</a></li>
+          <li><a href="/unavailable">Activity List</a></li>
+          <li><a href="/unavailable">About</a></li>
+          <li><a href="/unavailable">Contact</a></li><br><br><br>
+          <form action="/new/logout">
+            <button type="submit">LOGOUT</button>
+          </form>
+        </ul>
+      </div>
+        <h1 class="title">How are you feeling?</h1>
+    </header>
+  </head>
+  <body>
+      <div class="container">
+        <div class="first" id="blue">
+        </div>
+        <div class="second" id="green">
+        </div>
+        <div class="third" id="yellow">
+        </div>
+        <div class="fourth" id="red">
+        </div>
+      </div>
+  </body>
+</html>

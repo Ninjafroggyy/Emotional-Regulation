@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='profile.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>profile</title>
+    </head>
+<body>
+    <header >
+        <h1 class="app_name">Emotional Regulation App</h1>
+        <input type="checkbox" id="ham-menu">
+          <label for="ham-menu">
+            <div class="hide-des">
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+              <span class="menu-line"></span>
+            </div>
+          </label>
+          <div class="full-page-blue"></div>
+          <div class="ham-menu">
+            <ul class="centre-text bold-text">
+              <h1>Emotional Regulation App</h1>
+              <li><a href="/new/homepage">Home</a></li>
+              <li><a href="/new/profile">Profile</a></li>
+              <li><a href="/unavailable">Journal</a></li>
+              <li><a href="/unavailable">Activity List</a></li>
+              <li><a href="/unavailable">About</a></li>
+              <li><a href="/unavailable">Contact</a></li>
+            </ul>
+          </div>
+    </header>
+        <h1 class="success">Login Successful</h1>
+        <label>Welcome to your profile</label><br>
+        <img src="{{url_for('static', filename='Blue_Card.png')}}" align="middle" />
+        <img src="{{url_for('static', filename='Red_Card.png')}}" align="middle" />
+        <img src="{{url_for('static', filename='Yellow_Card.png')}}" align="middle" />
+        <img src="{{url_for('static', filename='Green_Card.png')}}" align="middle" />
+</body>
+    <footer>
+        <form action="/new/logout">
+            <button type="submit">LOGOUT</button>
+        </form>
+    </footer>
+</html>
