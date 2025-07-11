@@ -1,0 +1,4 @@
+HOST = "localhost"
+USER = "root"
+PASSWORD = "<ENTER YOUR DATABASE PASSWORD>"
+DATABASE = "login"
