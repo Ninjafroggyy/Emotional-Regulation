@@ -29,8 +29,8 @@ from user import User
 #     DATABASE_USER = os.environ["DATABASE_USER"]
 
 
-GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "")
-GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "")
+GOOGLE_CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID", "401594911833-h7q8iu5bmk5ofeqpn367ip9hp495oh7r.apps.googleusercontent.com")
+GOOGLE_CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET", "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")
 GOOGLE_DISCOVERY_URL = (
     "https://accounts.google.com/.well-known/openid-configuration"
                         )
