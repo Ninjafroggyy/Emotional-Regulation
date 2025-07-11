@@ -21,8 +21,3 @@ venv/
 *.old
 *.orig
 *.save
-
-# ─── Project Specific ─────────────────────────────────────
-unused_code/
-test.jpg
-Working_Docs/
