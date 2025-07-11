@@ -1,0 +1,29 @@
+{% extends "Layout.html" %}
+
+{% block title %}Profile{% endblock %}
+<div>
+    <h2>My Profile</h2>
+    <br>
+    <p>Hello, <span>{{ user.name }}</span></p>
+
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Claim</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for key, claim in user.claims() %}
+    <tr>
+        <td>{{ key }}</td>
+        <td id="claim-{{ key }}">
+            {{ claim }}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
