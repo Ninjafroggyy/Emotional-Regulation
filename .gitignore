@@ -1,0 +1,27 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+
+# ─── IDEs and Editors ─────────────────────────────────────
+.idea/
+
+# ─── Logs and Dumps ───────────────────────────────────────
+*.log
+*.core
+*.stackdump
+
+# ─── Temporary/Backup Files ───────────────────────────────
+*.tmp
+*.bak
+*.old
+*.orig
+*.save
+
+# ─── Project Specific ─────────────────────────────────────
+unused_code/
+test.jpg
