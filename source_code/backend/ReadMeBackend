@@ -1,0 +1,12 @@
+The database has been created for you.
+Run the 'backend_api' file.
+Do not terminate this until you want to stop the program.
+Now run the 'backend_main' file.
+In the console will appear the question 'What is your zone?'. This is the program asking for your user input to demo how the program works.
+Enter 'blue', 'green', 'yellow', or 'red', depending on your mood.
+The program will return to the console a suggested activity, and the counter of how many times you have picked that colour.
+Now it will ask you: 'Would you like to try another activity? y/n'
+Enter y or n as required.
+If you enter y, the program will ask you for your zone as before, and when it recommends you an activity, you will see an updated count of how many times you have picked this colour zone.
+If you enter n, the program will print 'Hope you are feeling better!'.
+The program contains an optional resume_process function. This will restart the process by asking what is your zone. As before, the program will suggest an activity, and the count of your answers from the first run will be added to those from this second run.
